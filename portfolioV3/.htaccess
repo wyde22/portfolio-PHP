@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^realisation/([a-z0-9\-]+)$ view.php?slug=$1
+RewriteRule ^categorie/([a-z0-9\-]+)$ index.php?category=$1
