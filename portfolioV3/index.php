@@ -110,31 +110,38 @@ $tableauskillFront= $db->query("SELECT name_skill, pourcentage FROM skill")->fet
 
  <h1>Me contactez</h1>
 
- <form action="post_contact.php" method="POST">
- 	
- 	<div class="form-group ">
-	  <label class="control-label" for="inputName">Nom</label>
-	  <input type="text" class="form-control" id="inputName" name="name">
+<div class="row">
+	<div class="col-sm-8">
+		
+		<form action="post_contact.php" method="POST">
+	 	
+		 	<div class="form-group ">
+			  <label class="control-label" for="inputName">Nom</label>
+			  <input type="text" class="form-control" id="inputName" name="name">
+			</div>
+
+			<div class="form-group ">
+			  <label class="control-label" for="inputFirstname">Prénom</label>
+			  <input type="text" class="form-control" id="inputFirstname" name="firstname">
+			</div>
+
+			<div class="form-group">
+			  <label class="control-label" for="inputEmail">Email</label>
+			  <input type="email" class="form-control" id="inputEmail" name="email">
+			</div>
+
+			<div class="form-group">
+			  <label class="control-label" for="inputMessage">Votre message</label>
+			  <textarea class="form-control" rows="8" id="inputMessage" name="message"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Envoyer</button>
+
+	 	</form>
+
 	</div>
 
-	<div class="form-group ">
-	  <label class="control-label" for="inputFirstname">Prénom</label>
-	  <input type="text" class="form-control" id="inputFirstname" name="firstname">
-	</div>
-
-	<div class="form-group">
-	  <label class="control-label" for="inputEmail">Email</label>
-	  <input type="email" class="form-control" id="inputEmail" name="email">
-	</div>
-
-	<div class="form-group">
-	  <label class="control-label" for="inputMessage">Votre message</label>
-	  <textarea class="form-control" rows="8" id="inputMessage" name="message"></textarea>
-	</div>
-
-	<button type="submit" class="btn btn-primary">Envoyer</button>
-
- </form>
+</div>
 
  	
 
