@@ -141,7 +141,20 @@ $tableauskillFront= $db->query("SELECT name_skill, pourcentage FROM skill")->fet
 
 	</div>
 
+	<div class="col-sm-4">		
+		<span class="label label-default">Default</span>
+		<span class="label label-primary">Primary</span>
+		<span class="label label-success">Success</span>
+		<span class="label label-info">Info</span>
+		<span class="label label-warning">Warning</span>
+		<span class="label label-danger">Danger</span>		
+	</div>
+
 </div>
+
+
+	
+
 
  	
 
